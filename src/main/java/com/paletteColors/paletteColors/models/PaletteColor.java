@@ -1,4 +1,4 @@
-package com.paletteColors.paletteColors.model;
+package com.paletteColors.paletteColors.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,5 +16,4 @@ public class PaletteColor {
     private String rgb;
     private String name;
 
-    // Getters and Setters
 }

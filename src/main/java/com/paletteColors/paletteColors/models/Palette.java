@@ -1,7 +1,7 @@
-package com.paletteColors.paletteColors.model;
+package com.paletteColors.paletteColors.models;
+
 
 import java.util.List;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -11,18 +11,17 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import lombok.Data;
 
+
 @Entity
 @Data
-public class Company {
+public class Palette {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String url;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Palette> palettes;
+    private List<PaletteColor> colors;
 
-    // Getters and Setters
 }
