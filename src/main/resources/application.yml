@@ -1,0 +1,16 @@
+spring:
+  devtools:
+    add-properties: false
+  datasource:
+    url: jdbc:postgresql://ep-lucky-cherry-a24fqn1s.eu-central-1.aws.neon.tech/PaletteColors?sslmode=require
+    driver-class-name: org.postgresql.Driver
+    username: PaletteColors_owner
+    password: fj8hA3ZmuCVq
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+
+server:
+  port: 8080
